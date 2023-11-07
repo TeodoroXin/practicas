@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:record/record.dart';
 import 'package:audioplayers/audioplayers.dart';
 
-void main() => runApp(const Alternative());
-
 class Alternative extends StatefulWidget {
   const Alternative({Key? key}) : super(key: key);
 
@@ -24,7 +22,8 @@ class _AlternativeState extends State<Alternative> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return const MaterialApp(
+      home: Scaffold(
         body: Center(
           // child: showPlayer
           //     ? Padding(
@@ -36,7 +35,7 @@ class _AlternativeState extends State<Alternative> {
           //           },
           //         ),
           //       )
-          //     : Recorder(
+          //     : AudioRecorder(
           //         onStop: (path) {
           //           if (kDebugMode) print('Recorded file path: $path');
           //           setState(() {
@@ -45,8 +44,9 @@ class _AlternativeState extends State<Alternative> {
           //           });
           //         },
           //       ),
-          child: Text('Ejemplo de la Web'),
+          child: Text('Errors on sight'),
         ),
-      );
+      ),
+    );
   }
 }

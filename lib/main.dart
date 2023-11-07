@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:practicas/screens/alternative.dart';
-import 'package:practicas/screens/chuck_norris.dart';
+import 'package:practicas/screens/audio_recorder.dart';
 import 'package:practicas/screens/home.dart';
 
 void main() {
